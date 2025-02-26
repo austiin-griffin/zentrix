@@ -561,8 +561,8 @@ async def get_surge_multiplier(guild_id: str) -> float:
 async def setup_bot():
     await bot.wait_until_ready()
     # Load cogs
-    await bot.load_extension("cogs.venture")
-    await bot.load_extension("cogs.extras")
+    await bot.load_extension("venture")
+    await bot.load_extension("extras")
     logger.info("Cogs loaded successfully")
 
 @bot.event
